@@ -1,0 +1,54 @@
+{
+    "homepage": "http://asdfbugoy.github.io/template",
+    "name": "frontend",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.3.2",
+        "@testing-library/user-event": "^7.1.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-scripts": "3.4.1"
+    },
+    "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "build-css": "node-sass-chokidar src/scss -o public/css --output-style compressed",
+        "watch-css": "node-sass-chokidar src/scss -o public/css --watch --recursive --output-style compressed",
+        "start": "npm-run-all -p watch-css start-rar",
+        "start-rar": "react-app-rewired start",
+        "build": "react-app-rewired build",
+        "test": "cypress open",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "bootstrap": "^4.4.1",
+        "cypress": "^4.3.0",
+        "eslint": "^6.8.0",
+        "eslint-plugin-cypress": "^2.10.3",
+        "eslint-plugin-react": "^7.19.0",
+        "eslint-plugin-react-hooks": "^3.0.0",
+        "gh-pages": "^2.2.0",
+        "node-sass-chokidar": "^1.4.0",
+        "npm-run-all": "^4.1.5",
+        "react-app-rewired": "^2.1.5",
+        "stylelint": "^13.3.2",
+        "stylelint-config-standard": "^20.0.0"
+    }
+}
