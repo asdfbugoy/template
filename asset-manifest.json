@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/template/static/js/main.dac30c6b.js",
+    "main.js.map": "/template/static/js/main.dac30c6b.js.map",
+    "index.html": "/template/index.html",
+    "precache-manifest.d6bc44f2984bbe9fb0fe320364641a27.js": "/template/precache-manifest.d6bc44f2984bbe9fb0fe320364641a27.js",
+    "service-worker.js": "/template/service-worker.js",
+    "static/js/main.dac30c6b.js.LICENSE.txt": "/template/static/js/main.dac30c6b.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/main.dac30c6b.js"
+  ]
+}
